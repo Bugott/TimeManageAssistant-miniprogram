@@ -1,0 +1,71 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "",	//需要自己自己的appid
+	"projectname": "时间管理小助手",
+	"libVersion": "2.8.3",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": 0,
+					"name": "detail",
+					"pathName": "pages/detail/index",
+					"query": "id=XIzKrcDR1TiN7x3C",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "timer",
+					"pathName": "pages/timer/index",
+					"query": "title=HelloWorld",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "summary",
+					"pathName": "pages/summary/index",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

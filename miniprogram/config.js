@@ -1,0 +1,1 @@
+export const CLOUD_ENV_ID = 'XXXXXXX'  // 云开发环境ID

@@ -1,0 +1,6 @@
+<!-- Loading三小点显示 -->
+<view class="loading">
+  <view class="bounce1"></view>
+  <view class="bounce2"></view>
+  <view class="bounce3"></view>
+</view>

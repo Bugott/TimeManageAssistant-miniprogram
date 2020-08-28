@@ -1,0 +1,190 @@
+.blur-bg {
+  filter: blur(10rpx);
+  overflow: hidden;
+  animation: ani-blur 1000ms;
+}
+
+/* 用户信息显示 */
+.user-info-container {
+  margin: 0 40rpx;
+  margin-top: 32rpx;
+  text-align:center;
+}
+
+.user-info-container .avatar {
+  width: 150rpx;
+  height: 150rpx;
+  border: 5rpx solid #9370DB;
+  border-radius: 50%;
+}
+
+.info {
+  margin-top:12rpx;
+  color: black;
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
+.info > .name {
+  color: #9370DB;
+  font-weight: bold;
+  font-size: inherit;
+}
+
+.info > .statistics {
+  margin-top:12rpx;
+  color: black;
+  font-size: 32rpx;
+}
+
+.authorize {
+  display: inline-block;
+  padding: 12rpx 48rpx;
+  background-color: #9370DB;
+  color: whitesmoke;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 28rpx;
+}
+
+/* 空视图 */
+.pie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.empty-img {
+  position: absolute;
+  width: 50%;
+}
+
+/* 饼状图 */
+.pie-container,
+.pie {
+  width: 100%;
+  height: 500rpx;
+}
+
+/* 目标列表 */
+.project-container {
+  margin: 0 40rpx;
+  margin-top: 10rpx;
+  margin-bottom: 200rpx;
+}
+
+.project-container > .count {
+  color: #555;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+
+.project-container > .count > .num {
+  display: inline-block;
+  margin: 0 4rpx;
+  color: #9370DB;
+  font-weight: bolder;
+  font-size: 32rpx;
+}
+
+.project {
+  margin: 24rpx 0;
+  padding: 24rpx;
+  border-radius: 18rpx;
+  background-color: #fff;
+  box-shadow: 0 6rpx 24rpx rgba(25, 118, 210, 0.08);
+}
+
+.project > .title {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+
+.project > .tags {
+  display: flex;
+  margin-top: 6rpx;
+}
+
+.project > .tags > m-tag {
+  margin-left: 16rpx;
+}
+
+.project > .tags > m-tag:first-child {
+  margin-left: 0;
+}
+
+/* 当前记录提示 */
+.timer-tips {
+  margin: 40rpx 40rpx;
+  background-color: #9370DB;
+  font-size: 28rpx;
+  border-radius: 18rpx;
+  padding: 20rpx 24rpx;
+  color: whitesmoke;
+  animation: tip-ani 2s infinite ease-in-out;
+  box-shadow: 0 6rpx 24rpx rgba(25, 118, 210, 0.08);
+}
+
+@keyframes tip-ani {
+  0% {
+    background-color: #9370DB;
+  }
+  70% {
+    background-color: #A020F0;
+  }
+  100% {
+    background-color: #9370DB;
+  }
+}
+
+.timer-tips > .timer-detail {
+  display: flex;
+  align-items: center;
+}
+
+.timer-tips .timer {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #00F5FF;
+  margin-top: 6rpx;
+  letter-spacing: 2rpx;
+}
+
+.timer-tips > .timer-detail > .timer-event-title {
+  display: inline-block;
+  font-weight: bold;
+  color: #DCDCDC;
+  margin: 0 8rpx;
+}
+
+
+@keyframes ani-blur {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+/* 创建按钮 */
+.create {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  box-sizing: border-box;
+  margin: 32px;
+  padding: 24rpx;
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background-color: #9370DB;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3rpx 20rpx;
+}
+
+/* 加载 */
+.loading {
+  margin-top: 100rpx;
+}

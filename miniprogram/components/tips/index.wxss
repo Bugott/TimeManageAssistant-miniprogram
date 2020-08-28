@@ -1,0 +1,44 @@
+.tips-container {
+  margin: 0 40rpx;
+  background-color: #9370DB;
+  font-size: 28rpx;
+  border-radius: 18rpx;
+  padding: 20rpx 24rpx;
+  color: #555;
+  box-shadow: 0 6rpx 24rpx rgba(25, 118, 210, 0.08);
+  display: flex;
+  align-items: center;
+  animation: ani 2s infinite ease-in-out;
+}
+
+.tips-container > .info > .warn {
+  font-size: 26rpx;
+  color: white;
+}
+
+.tips-container > .info > .tips {
+  font-size: 30rpx;
+  font-weight: bold;
+  color:aliceblue;
+  margin-top: 2rpx;
+}
+
+.tips-container > image {
+  width: 56rpx;
+  height: 56rpx;
+  margin-right: 32rpx;
+  margin-top: 10rpx;
+  align-self: flex-start;
+}
+
+@keyframes ani {
+  0% {
+    background-color: #9370DB;
+  }
+  70% {
+    background-color: #A020F0;
+  }
+  100% {
+    background-color: #9370DB;
+  }
+}
